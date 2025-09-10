@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import com.product.api.entity.Category;
 import com.product.api.service.SvcCategory;
 
-@RestController("/Category")
+@RestController
+@RequestMapping("/category")
 public class CtrlCategory {
 	
 	@Autowired 
@@ -18,7 +19,8 @@ public class CtrlCategory {
 	public List<Category> getCategories() {
 		List<Category> categories = new ArrayList<>();
 		categories.add(new Category(1,"Lentes","Lts",1));
-		//2 más
+		categories.add(new Category(2,"Chamarra","Chmr",1));
+		categories.add(new Category(3,"Playera","Plyr",1));
 		return categories;
 	}
 }

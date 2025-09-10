@@ -3,10 +3,10 @@ import java.util.List;
 
 import com.product.api.entity.Category;
 import com.product.api.repository.RepoCategory;
-
 import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public class SvcCategoryImp implements SvcCategory {
 
 	@Autowired
