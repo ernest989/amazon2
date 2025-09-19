@@ -21,6 +21,6 @@ public class CtrlCategory {
 		categories.add(new Category(1,"Lentes","Lts",1));
 		categories.add(new Category(2,"Chamarra","Chmr",1));
 		categories.add(new Category(3,"Playera","Plyr",1));
-		return categories;
+		return svc.getCategories();
 	}
 }
