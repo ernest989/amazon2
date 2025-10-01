@@ -10,6 +10,10 @@ public class DBAccessException extends RuntimeException{
 	public DBAccessException(DataAccessException e) {
 		this.exception = e;
 	}
+	
+	public DBAccessException() {
+		
+	}
 
 }
 

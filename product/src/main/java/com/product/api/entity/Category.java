@@ -1,6 +1,9 @@
 package com.product.api.entity;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.*;
 
 
@@ -10,9 +13,21 @@ public class Category {
 
     // Atributos
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@JsonProperty("category_id")
+	@Column(name="category_id")
     private Integer category_id;
+	
+	@JsonProperty("category")
+	@Column(name="category")
     private String category;
+	
+	@JsonProperty("tag")
+	@Column(name="tag")
     private String tag;
+	
+	@JsonProperty("status")
+	@Column(name="status")
     private Integer status;
 
     // Variables estáticas compartidas
